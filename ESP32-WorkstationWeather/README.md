@@ -1,5 +1,7 @@
-# ESP32-Projects
-Is the Repository to storage the test and projects developed with arduino or ESP32.
+# ESP32-Almacen
+This sketch connect to Wi-Fi, read from NTC the unix date 
+and update the RTC clock each reboot. In the cycle, the sketch read from modbus rtu the temperature and humidity from XY-MD02 Sensor print in LCD Screen and save it in csv Logfile in uSD.
+The sketch detect the uSD and when is not, print error message in the screen.
 
 Developed by [Daniela Zaffalon](https://github.com/danielazaffalon)
 
@@ -8,6 +10,8 @@ Developed by [Daniela Zaffalon](https://github.com/danielazaffalon)
 
 ### Hardware
 - hardware required:
+  - [Modbus RTU RS485 SHT20](XY-MD02)
+  - [DFR0464](https://wiki.dfrobot.com/Gravity__I2C_16x2_Arduino_LCD_with_RGB_Backlight_Display_SKU__DFR0464)
 
 ## Dependencies
   - [RTClib 2.1.1](https://github.com/adafruit/RTClib)
@@ -21,5 +25,10 @@ Developed by [Daniela Zaffalon](https://github.com/danielazaffalon)
   - [SD 1.2.4](http://www.arduino.cc/en/Reference/SD)
 
 ## Usage
-
+- Connect the ethernet cable between the ESP32 and a DHCP network
+- Connect the Modbus Temperature/Humidity Sensor to Modbus RTU ESP32 Port and to the power supply
+- Connecto LCD 2x16 Screen to I2C ESP32 Port
+- Connect the ESP32 to Power Supply
+- Introduce a uSD Card into the ESP32 slot.
+- Turn on the devices.
 

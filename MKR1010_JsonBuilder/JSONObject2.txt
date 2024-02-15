@@ -1,0 +1,30 @@
+{
+  "Object_A_Name": {
+    "Object_A1_Name": {
+      "Object_A1_Field1": "MainObjectA1_Field1_Value"
+    },
+    "Object_A2_Name": {
+      "Object_A2_1_Name": {
+        "ArrayObject_A2_1a_Name": [
+          "ArrayObject_A2_1a_Field1",
+          "ArrayObject_A2_1a_Field2"
+        ]
+      }
+    },
+    "Object_A3_Name": {
+      "Object_A3_Field1": 1050
+    }
+  },
+  "Object_B_Name": {
+    "Object_B1_Name": {
+      "Object_B1_1_Name": {
+        "ArrayObject_B1_1a_Name": [
+          "ArrayObject_B1_1a_Field1",
+          "ArrayObject_B1_1a_Field2",
+          "ArrayObject_B1_1a_Field3",
+          "ArrayObject_B1_1a_Field4"
+        ]
+      }
+    }
+  }
+}
